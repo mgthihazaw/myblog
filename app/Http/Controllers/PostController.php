@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
 use App\Category;
 
-class CategoryController extends Controller
+class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +15,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $categories=Category::all();
-        // dd($categories);
-        return view('category.index')->withCategories($categories);
+        $posts=Post::all();
+        return view('post.index')->withPosts($posts);
     }
 
     /**
@@ -26,7 +26,8 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        $categories=Category::all();
+        return view('post.create')->withCategories($categories);
     }
 
     /**
@@ -37,14 +38,7 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        
-        $this->validate($request,[
-           'categoryname' => 'required|String',
-        ]);
-        Category::create([
-            'name'=>$request->categoryname
-        ]);
-        return redirect()->back();
+        //
     }
 
     /**
@@ -89,7 +83,7 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        Category::find($id)->delete();
-        return redirect()->route('category.index');
+        Post::find($id)->delete();
+        return redirect()->route('post.index');
     }
 }

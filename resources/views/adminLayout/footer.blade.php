@@ -27,5 +27,10 @@
     $('#createCategory').on('click', function(){
             $('#createCategoryModel').modal('show');
        });
+
+    $(".deleteCategory").on("submit", function(){
+        return confirm("Are you sure to Delete?");
+    });
+
   </script>
 </html>

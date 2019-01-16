@@ -22,8 +22,8 @@
 
             <li class="nav-title bg-success m-2">Categories</li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="nav-icon icon-user"></i> Laravel
+                <a class="nav-link" href="{{route('category.index')}}">
+                    <i class="nav-icon icon-user"></i> Category Data
                 </a>
             </li>
             <li class="nav-item">
