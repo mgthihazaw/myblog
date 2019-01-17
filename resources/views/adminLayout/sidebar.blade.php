@@ -7,15 +7,17 @@
                 </a>
             </li>
 
-            <li class="nav-title bg-success m-2">Settings</li>
+            
+
+            <li class="nav-title bg-success m-2">Posts</li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="nav-icon icon-user"></i> Users
+                <a class="nav-link" href="{{route('post.index')}}">
+                    <i class="nav-icon icon-user"></i> Post Datas
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="nav-icon icon-lock"></i> Roles
+                <a class="nav-link" href="{{route('post.create')}}">
+                    <i class="nav-icon icon-lock"></i> Create Post
                 </a>
             </li>
 
@@ -26,7 +28,7 @@
                     <i class="nav-icon icon-user"></i> Category Data
                 </a>
             </li>
-            <li class="nav-item">
+           <!--  <li class="nav-item">
                 <a class="nav-link" href="#">
                     <i class="nav-icon icon-lock"></i> C++
                 </a>
@@ -50,7 +52,18 @@
                 <a class="nav-link" href="#">
                     <i class="nav-icon icon-lock"></i> Andriod
                 </a>
+            </li> -->
+            <li class="nav-title bg-success m-2">Settings</li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="nav-icon icon-user"></i> Users
+                </a>
             </li>
+           <!--  <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="nav-icon icon-lock"></i> Roles
+                </a>
+            </li> -->
         </ul>
     </nav>
     <button class="sidebar-minimizer brand-minimizer" type="button"></button>

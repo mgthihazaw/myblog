@@ -34,8 +34,15 @@ Route::delete('category/{id}/delete','CategoryController@destroy')->name('catego
 /********************Start Post*************************************/
 
 Route::get('post','PostController@index')->name('post.index');
-Route::get('post/create','PostController@create')->name('post.create');
 
-Route::delete('post/{id}/delete','PostController@destroy');
+Route::get('post/create','PostController@create')->name('post.create');
+Route::post('post/store','PostController@store')->name('post.store');
+
+Route::get('post/{id}/edit','PostController@edit')->name('post.edit');
+Route::post('post/{id}/store','PostController@update')->name('post.update');
+
+Route::get('post/{id}/show','PostController@show')->name('post.show');
+Route::delete('post/{id}/delete','PostController@destroy')->name('post.delete');
+
 
 /**********************End Post************************************/

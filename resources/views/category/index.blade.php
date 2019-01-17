@@ -23,7 +23,7 @@
                 
                 
                 <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 267px;">Date registered</th>
-                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 258px;">Actions</th>
+                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 150px;">Actions</th>
                 
 
             </tr>
@@ -37,18 +37,16 @@
                 <td><span class="">{{ $category->name }}</span></td>
                 <td>{{ $category->updated_at }}</td>
                 <td>
-                    <div class="row">
-                    <a class="btn btn-success" href="#"><i class="fa fa-search-plus"></i></a>
-                    <a class="btn btn-info" href=""><i class="fa fa-edit"></i></a>
+                    
                     
                     <form  class="deleteCategory" action="{{route('category.delete',$category->id)}}" method="post">
                          @csrf
                         <input name="_method" type="hidden" value="DELETE">
-                      <button class="btn btn-danger" type="submit" ><i class="fa fa-trash-o"></i>
+                      <button class="btn btn-danger btn-block" type="submit" >Delete
                       </button>
                       
                </form>
-               </div>
+               
                 </td>
            
                 </tr>

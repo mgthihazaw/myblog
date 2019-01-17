@@ -38,7 +38,20 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+           'title'=>'required|String',
+           'body'=>'required',
+           'category'=>'required|integer'
+        ]);
+        // dd($request->all());
+
+        Post::create([
+          'title'=>$request->title,
+          'body'=>$request->body,
+          'user_id'=>$request->user,
+          'category_id'=>$request->category
+        ]);
+        return redirect()->route('post.index');
     }
 
     /**
@@ -49,7 +62,8 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        //
+        $post= Post::find($id);
+        return view('post.show')->withPost($post);
     }
 
     /**
@@ -60,7 +74,9 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        //
+       $post= Post::find($id);
+       $categories=Category::all();
+        return view('post.edit')->withPost($post)->withCategories($categories);
     }
 
     /**
@@ -72,7 +88,9 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $post= Post::find($id);
+        $post->update($request->all());
+        return redirect()->route('post.show',$id);
     }
 
     /**

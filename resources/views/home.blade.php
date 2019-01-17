@@ -25,77 +25,157 @@
                 </div> -->
  <div class="row">
     <div class="col-sm-12">
-       <table class="table table-striped table-bordered datatable dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info" style="border-collapse: collapse !important">
-         <thead>
-            <tr role="row">
-                <th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="                  Username: activate to sort column descending" style="width: 309px;">Username</th>
-                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Date registered: activate to sort column ascending" style="width: 267px;">Date registered</th>
-                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Role: activate to sort column ascending" style="width: 124px;">Role</th>
-                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 137px;">Status</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 258px;">Actions</th>
-            </tr>
-                </thead>
-                <tbody>
-                <tr role="row" class="odd">
-                <td class="sorting_1">Adam Alister</td>
-                <td>2012/01/21</td>
-                <td>Staff</td>
-                <td><span class="badge badge-success">Active</span></td>
-                <td><a class="btn btn-success" href="#"><i class="fa fa-search-plus"></i></a><a class="btn btn-info" href="#"><i class="fa fa-edit"></i></a><a class="btn btn-danger" href="#"><i class="fa fa-trash-o"></i></a></td>
-                </tr><tr role="row" class="even">
-                <td class="sorting_1">Adinah Ralph</td>
-                <td>2012/06/01</td>
-                <td>Admin</td>
-                <td><span class="badge badge-dark">Inactive</span></td>
-                <td><a class="btn btn-success" href="#"><i class="fa fa-search-plus"></i></a><a class="btn btn-info" href="#"><i class="fa fa-edit"></i></a><a class="btn btn-danger" href="#"><i class="fa fa-trash-o"></i></a></td>
-                </tr><tr role="row" class="odd">
-                <td class="sorting_1">Ajith Hristijan</td>
-                <td>2012/03/01</td>
-                <td>Member</td>
-                <td><span class="badge badge-warning">Pending</span></td>
-                <td><a class="btn btn-success" href="#"><i class="fa fa-search-plus"></i></a><a class="btn btn-info" href="#"><i class="fa fa-edit"></i></a><a class="btn btn-danger" href="#"><i class="fa fa-trash-o"></i></a></td>
-                </tr><tr role="row" class="even">
-                <td class="sorting_1">Alphonse Ivo</td>
-                <td>2012/01/01</td>
-                <td>Member</td>
-                <td><span class="badge badge-success">Active</span></td>
-                <td><a class="btn btn-success" href="#"><i class="fa fa-search-plus"></i></a><a class="btn btn-info" href="#"><i class="fa fa-edit"></i></a><a class="btn btn-danger" href="#"><i class="fa fa-trash-o"></i></a></td>
-                </tr><tr role="row" class="odd">
-                <td class="sorting_1">Anton Phunihel</td>
-                <td>2012/01/01</td>
-                <td>Member</td>
-                <td><span class="badge badge-success">Active</span></td>
-                <td><a class="btn btn-success" href="#"><i class="fa fa-search-plus"></i></a><a class="btn btn-info" href="#"><i class="fa fa-edit"></i></a><a class="btn btn-danger" href="#"><i class="fa fa-trash-o"></i></a></td>
-                </tr><tr role="row" class="even">
-                <td class="sorting_1">Bao Gaspar</td>
-                <td>2012/01/01</td>
-                <td>Member</td>
-                <td><span class="badge badge-success">Active</span></td>
-                <td><a class="btn btn-success" href="#"><i class="fa fa-search-plus"></i></a><a class="btn btn-info" href="#"><i class="fa fa-edit"></i></a><a class="btn btn-danger" href="#"><i class="fa fa-trash-o"></i></a></td>
-                </tr><tr role="row" class="odd">
-                <td class="sorting_1">Bernhard Shelah</td>
-                <td>2012/06/01</td>
-                <td>Admin</td>
-                <td><span class="badge badge-dark">Inactive</span></td>
-                <td><a class="btn btn-success" href="#"><i class="fa fa-search-plus"></i></a><a class="btn btn-info" href="#"><i class="fa fa-edit"></i></a><a class="btn btn-danger" href="#"><i class="fa fa-trash-o"></i></a></td>
-                </tr><tr role="row" class="even">
-                <td class="sorting_1">Bünyamin Kasper</td>
-                <td>2012/08/23</td>
-                <td>Staff</td>
-                <td><span class="badge badge-danger">Banned</span></td>
-                <td><a class="btn btn-success" href="#"><i class="fa fa-search-plus"></i></a><a class="btn btn-info" href="#"><i class="fa fa-edit"></i></a><a class="btn btn-danger" href="#"><i class="fa fa-trash-o"></i></a></td>
-                </tr><tr role="row" class="odd">
-                <td class="sorting_1">Carlito Roffe</td>
-                <td>2012/08/23</td>
-                <td>Staff</td>
-                <td><span class="badge badge-danger">Banned</span></td>
-                <td><a class="btn btn-success" href="#"><i class="fa fa-search-plus"></i></a><a class="btn btn-info" href="#"><i class="fa fa-edit"></i></a><a class="btn btn-danger" href="#"><i class="fa fa-trash-o"></i></a></td>
-                </tr><tr role="row" class="even">
-                <td class="sorting_1">Chidubem Gottlob</td>
-                <td>2012/02/01</td>
-                <td>Staff</td>
-                <td><span class="badge badge-danger">Banned</span></td>
-                <td><a class="btn btn-success" href="#"><i class="fa fa-search-plus"></i></a><a class="btn btn-info" href="#"><i class="fa fa-edit"></i></a><a class="btn btn-danger" href="#"><i class="fa fa-trash-o"></i></a></td>
-                </tr></tbody>
-                </table></div></div>
+
+<div class="row">
+<div class="col-sm-12 col-lg-6">
+<div class="brand-card">
+<div class="brand-card-header bg-facebook">
+<i class="fa fa-facebook"></i>
+<div class="chart-wrapper"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+<canvas id="social-box-chart-1" height="96" width="384" class="chartjs-render-monitor" style="display: block; width: 384px; height: 96px;"></canvas>
+</div>
+</div>
+<div class="brand-card-body">
+<div>
+<div class="text-value">89k</div>
+<div class="text-uppercase text-muted small">friends</div>
+</div>
+<div>
+<div class="text-value">459</div>
+<div class="text-uppercase text-muted small">feeds</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-lg-6">
+<div class="brand-card">
+<div class="brand-card-header bg-twitter">
+<i class="fa fa-twitter"></i>
+<div class="chart-wrapper"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+<canvas id="social-box-chart-2" height="96" width="384" class="chartjs-render-monitor" style="display: block; width: 384px; height: 96px;"></canvas>
+</div>
+</div>
+<div class="brand-card-body">
+<div>
+<div class="text-value">973k</div>
+<div class="text-uppercase text-muted small">followers</div>
+</div>
+<div>
+<div class="text-value">1.792</div>
+<div class="text-uppercase text-muted small">tweets</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-lg-6">
+<div class="brand-card">
+<div class="brand-card-header bg-linkedin">
+<i class="fa fa-linkedin"></i>
+<div class="chart-wrapper"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+<canvas id="social-box-chart-3" height="96" width="384" class="chartjs-render-monitor" style="display: block; width: 384px; height: 96px;"></canvas>
+</div>
+</div>
+<div class="brand-card-body">
+<div>
+<div class="text-value">500+</div>
+<div class="text-uppercase text-muted small">contacts</div>
+</div>
+<div>
+<div class="text-value">292</div>
+<div class="text-uppercase text-muted small">feeds</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-lg-6">
+<div class="brand-card">
+<div class="brand-card-header bg-google-plus">
+<i class="fa fa-google-plus"></i>
+<div class="chart-wrapper"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+<canvas id="social-box-chart-4" height="96" width="384" class="chartjs-render-monitor" style="display: block; width: 384px; height: 96px;"></canvas>
+</div>
+</div>
+<div class="brand-card-body">
+<div>
+<div class="text-value">894</div>
+<div class="text-uppercase text-muted small">followers</div>
+</div>
+<div>
+<div class="text-value">92</div>
+<div class="text-uppercase text-muted small">circles</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-12 col-lg-6">
+<div class="brand-card">
+<div class="brand-card-header bg-facebook">
+<i class="fa fa-facebook"></i>
+<div class="chart-wrapper"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+<canvas id="social-box-chart-1" height="96" width="384" class="chartjs-render-monitor" style="display: block; width: 384px; height: 96px;"></canvas>
+</div>
+</div>
+<div class="brand-card-body">
+<div>
+<div class="text-value">89k</div>
+<div class="text-uppercase text-muted small">friends</div>
+</div>
+<div>
+<div class="text-value">459</div>
+<div class="text-uppercase text-muted small">feeds</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-lg-6">
+<div class="brand-card">
+<div class="brand-card-header bg-twitter">
+<i class="fa fa-twitter"></i>
+<div class="chart-wrapper"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+<canvas id="social-box-chart-2" height="96" width="384" class="chartjs-render-monitor" style="display: block; width: 384px; height: 96px;"></canvas>
+</div>
+</div>
+<div class="brand-card-body">
+<div>
+<div class="text-value">973k</div>
+<div class="text-uppercase text-muted small">followers</div>
+</div>
+<div>
+<div class="text-value">1.792</div>
+<div class="text-uppercase text-muted small">tweets</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-lg-6">
+<div class="brand-card">
+<div class="brand-card-header bg-linkedin">
+<i class="fa fa-linkedin"></i>
+<div class="chart-wrapper"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+<canvas id="social-box-chart-3" height="96" width="384" class="chartjs-render-monitor" style="display: block; width: 384px; height: 96px;"></canvas>
+</div>
+</div>
+<div class="brand-card-body">
+<div>
+<div class="text-value">500+</div>
+<div class="text-uppercase text-muted small">contacts</div>
+</div>
+<div>
+<div class="text-value">292</div>
+<div class="text-uppercase text-muted small">feeds</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+      
+      </div></div>
 
 @endsection
