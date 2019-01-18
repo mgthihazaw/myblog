@@ -1,12 +1,12 @@
 
     <footer class="app-footer fixed-bottom">
       <div>
-        <a href="https://coreui.io">CoreUI</a>
+        <a href="https://coreui.io">MyBlog</a>
         <span>&copy; 2018 creativeLabs.</span>
       </div>
       <div class="ml-auto">
         <span>Powered by</span>
-        <a href="https://coreui.io">CoreUI</a>
+        <a href="https://coreui.io">Microstack.co</a>
       </div>
     </footer>
     <!-- CoreUI and necessary plugins-->

@@ -36,8 +36,8 @@ class CreatePostsTable extends Migration
     public function down()
     {
          Schema::disableForeignKeyConstraints();
-    Schema::drop('posts');
-     Schema::enableForeignKeyConstraints();
+         Schema::drop('posts');
+         Schema::enableForeignKeyConstraints();
             
             
             

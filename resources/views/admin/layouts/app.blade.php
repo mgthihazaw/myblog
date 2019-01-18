@@ -30,9 +30,9 @@
 
     <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
     <div id="app">
-        @include('adminLayout.header')
+        @include('admin.layouts.header')
         <div class="app-body">
-            @include('adminLayout.sidebar')
+            @include('admin.layouts.sidebar')
             <main class="main pt-3">
                 <div class="container-fluid">
                     <div class="animated fadeIn">
@@ -45,4 +45,4 @@
  </body>
 
 
-  @include('adminLayout.footer')
+  @include('admin.layouts.footer')

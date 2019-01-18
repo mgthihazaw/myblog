@@ -16,7 +16,7 @@ class PostController extends Controller
     public function index()
     {
         $posts=Post::all();
-        return view('post.index')->withPosts($posts);
+        return view('admin.post.index')->withPosts($posts);
     }
 
     /**
@@ -27,7 +27,7 @@ class PostController extends Controller
     public function create()
     {
         $categories=Category::all();
-        return view('post.create')->withCategories($categories);
+        return view('admin.post.create')->withCategories($categories);
     }
 
     /**
@@ -63,7 +63,7 @@ class PostController extends Controller
     public function show($id)
     {
         $post= Post::find($id);
-        return view('post.show')->withPost($post);
+        return view('admin.post.show')->withPost($post);
     }
 
     /**
@@ -76,7 +76,7 @@ class PostController extends Controller
     {
        $post= Post::find($id);
        $categories=Category::all();
-        return view('post.edit')->withPost($post)->withCategories($categories);
+        return view('admin.post.edit')->withPost($post)->withCategories($categories);
     }
 
     /**

@@ -16,7 +16,7 @@ class CategoryController extends Controller
     {
         $categories=Category::all();
         // dd($categories);
-        return view('category.index')->withCategories($categories);
+        return view('admin.category.index')->withCategories($categories);
     }
 
     /**
