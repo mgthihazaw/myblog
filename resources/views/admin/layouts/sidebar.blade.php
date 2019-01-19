@@ -2,7 +2,7 @@
     <nav class="sidebar-nav">
         <ul class="nav">
             <li class="nav-item ">
-                <a class="nav-link active m-2" href="{{url('/home')}}">
+                <a class="nav-link active m-2" href="{{url('/admin/home')}}">
                     <i class="nav-icon icon-speedometer "></i> Dashboard
                 </a>
             </li>

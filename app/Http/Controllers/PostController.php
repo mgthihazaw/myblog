@@ -40,7 +40,7 @@ class PostController extends Controller
     {
         $this->validate($request,[
            'title'=>'required|String',
-           'body'=>'required',
+           'body'=>'required|String',
            'category'=>'required|integer'
         ]);
         // dd($request->all());

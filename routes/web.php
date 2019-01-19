@@ -11,10 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->middleware('guest');
+// Route::get('/', function () {
+//     return view('welcome');
+// })->middleware('guest');
 
+Route::get('/',function(){
+	return redirect('/login');
+
+})->middleware('guest');
 
 Auth::routes();
 
