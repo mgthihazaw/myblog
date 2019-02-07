@@ -37,11 +37,12 @@
                 
                 
                 <td><span class="">{{ $post->title }}</span></td>
-                <td><span class="">{!! substr($post->body,0,50) !!}</span></td>
+                <td><span class="">{{  substr($post->body,0,50) }}</span></td>
                 <td><span class="">{{ $post->category->name }}</span></td>
                 <td>{{ $post->updated_at }}</td>
                 <td>
-                    <div class="row">
+                  <div class="row">
+                    
                     <a class="btn btn-success" href="{{ route('post.show',$post->id) }}"><i class="fa fa-search-plus"></i></a>
                     <a class="btn btn-info" href="{{route('post.edit',$post->id)}}"><i class="fa fa-edit"></i></a>
                     

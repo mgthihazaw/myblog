@@ -17,5 +17,6 @@ class CategoriesTableSeeder extends Seeder
          DB::table('categories')->insert([
             'name' => 'C++',
         ]);
+         
     }
 }

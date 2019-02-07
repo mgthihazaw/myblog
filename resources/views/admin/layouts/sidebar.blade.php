@@ -53,17 +53,20 @@
                     <i class="nav-icon icon-lock"></i> Andriod
                 </a>
             </li> -->
-            <li class="nav-title bg-success m-2">Settings</li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="nav-icon icon-user"></i> Users
-                </a>
-            </li>
-           <!--  <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="nav-icon icon-lock"></i> Roles
+            <li class="nav-title bg-success m-2">Settings( {{ Auth::user()->name }})</li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" >
+                    <i class="nav-icon icon-user"></i> {{ Auth::user()->name }}
                 </a>
             </li> -->
+            <a class="nav-link" href="{{url('/')}}">
+              <i class="nav-icon icon-user"></i>User Panel</a>
+                
+            <li class="nav-item">
+                
+               <a class="nav-link" href="{{route('user.logout')}}">
+               <i class="nav-icon icon-lock"></i>logout</a>
+            </li>
         </ul>
     </nav>
     <button class="sidebar-minimizer brand-minimizer" type="button"></button>

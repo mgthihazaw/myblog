@@ -1,102 +1,97 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-         <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+ @extends('user.layouts.app')
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+ @section('content')
+  
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+        
+        <div class="col-md-8">
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            User 
-
+          
+        @foreach($posts as $post)
+          <!-- Blog Post -->
+          <div class=" mb-4 my-4 ">
+           <div class="card ">
+        <div class="card-header bg-secondary">
+           <h3 class="text-center"><strong>{{ $post->title }}</strong> </h3>
             
         </div>
-        <div class="container">
+        <div class="card-body">
+          <p >{!! substr($post->body,0,200) !!}</p>
     
-    <br><br><br><br><br><br><br><br><br>
-    <div id="app" class="app flex-row align-items-center ">
-        <div class="container">
-            <div class="row justify-content-center">
-                @yield('auth')
-                
-            </div>
+          <a class="btn btn-success" href="{{ route('user.readpost',$post->id) }}">ReadMore</i></a>
         </div>
-    </div>
-    </div>
-    </body>
-</html>
+        <div class="card-footer bg-secondary">
+            {{ $post->updated_at }} by {{$post->user->name}}
+        </div>
+        </div>
+          </div>
+          
+
+      
+    
+          @endforeach
+           
+         {{ $posts->links()}}
+
+        
+       </div>
+
+
+
+<!---------------------SideBar---------------------------->
+       <div class="col-md-4">
+
+          <!-- Search Widget -->
+          <div class="card my-4">
+            <h5 class="card-header bg-secondary">Search</h5>
+            <div class="card-body">
+              <div class="input-group">
+                <input type="text" class="form-control" name="searchtitle" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button class="btn btn-secondary" type="button">Go!</button>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-header bg-secondary">Categories</h5>
+            <div class="card-body">
+              <div class="row">
+                
+                  <ul class="list-group col-md-12">
+                    @foreach($categories as $category)
+                        <a href="{{route('user.category_posts',$category->id)}}">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                        {{ $category->name }}
+                        <span class="badge badge-primary badge-pill pull-right">{{count($category->posts)}}</span>
+                      </li>
+                      </a>
+
+                      @endforeach
+                      
+                    </ul>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Side Widget -->
+          <div class="card my-4">
+            <h5 class="card-header bg-secondary">Latested Posts</h5>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    @foreach($newposts as $newpost)
+                   <a href="{{ route('user.readpost',$newpost->id) }}"> <li class="list-group-item">{{ $newpost->title }}</li></a>
+                    @endforeach
+                </ul>
+             
+            </div>
+          </div>
+
+        </div>
+<!---------------------SideBar---------------------------->
+ @endsection

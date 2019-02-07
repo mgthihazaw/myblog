@@ -21,10 +21,16 @@ Route::get('/',function(){
 })->middleware('guest');
 
 Auth::routes();
+Route::get('logout','Auth\LoginController@logout')->name('user.logout');
 
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('post/{id}/read','HomeController@read')->name('user.readpost');
+
+Route::get('category/{id}/post','HomeController@category_posts')->name('user.category_posts');
+
+Route::post('comments/{post_id}','CommentController@store')->name('comments.store');
 
 
 

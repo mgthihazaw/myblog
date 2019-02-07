@@ -21,7 +21,20 @@
     <script src="{{ asset('admin/node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js') }}"></script> -->
     <!-- <script src="{{ asset('admin/js/main.js') }}"></script> -->
    <!--  <script type="text/javascript" src="{{ asset('vendor/tinymce/js/tinymce/tinymce.min.js') }}"></script> -->
-   <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+   <script src="https://cdn.tinymce.com/4/tinymce.min.js"></script>
+
+
+   <!--hightlight.js-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+ <script>$(document).ready(function() {
+ 
+
+
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
+});</script>
+
   </body>
 
 
@@ -42,6 +55,8 @@
     $(".deleteCategory").on("submit", function(){
         return confirm("Are you sure to Delete?");
     });
+     var size = $('textarea').css('height','400px');
+
 
   var editor_config = {
     path_absolute : "{{URL::to('/')}}",

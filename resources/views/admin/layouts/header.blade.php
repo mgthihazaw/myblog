@@ -17,10 +17,12 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right shadow mt-2">
                 <a class="dropdown-item">
-                    {{ Auth::user()->name }}<br>
+                   <i class="fas fa-sign-out-alt"></i> {{ Auth::user()->name }}<br>
                     <small class="text-muted">{{ Auth::user()->email }}</small>
                 </a>
-              
+                <div class="divider"></div>
+              <a class="dropdown-item" href="{{url('/')}}">
+                <i class="fas fa-sign-out-alt"></i>{{__('User Panel')}}</a>
                 <div class="divider"></div>
                 
                 <div class="divider"></div>

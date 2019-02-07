@@ -26,6 +26,8 @@
     <link href="{{ asset('admin/css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/vendors/pace-progress/css/pace.min.css') }}" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/a11y-dark.min.css">  <!--hightlight.css-->
+
 
 
     <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
