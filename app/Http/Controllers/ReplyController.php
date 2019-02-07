@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Comment;
 use App\Reply;
 
-class CommentController extends Controller
+class ReplyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,21 +33,24 @@ class CommentController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request,$post_id)
+    public function store(Request $request)
     {
-        $this->validate($request,[
-            'comment'=>'required|max:255',
+    
+        // dd($request->all());
+         $this->validate($request,[
+            'reply'=>'required|max:255',
             'user_id'=>'required|integer',
+            'comment_id'=>'required|integer',
             
 
         ]);
-        
-        Comment::Create([
-            'comment'=>$request->comment,
-            'user_id'=>$request->user_id,
-            'post_id'=>$post_id
-    ]);
+        Reply::create([
+           'reply'=>$request->reply,
+           'comment_id'=>$request->comment_id,
+           'user_id'=>$request->user_id,
+        ]);
         return redirect()->back();
+    
     }
 
     /**
@@ -95,23 +97,4 @@ class CommentController extends Controller
     {
         //
     }
-
-
-    public function reply(Request $request){
-        // dd($request->all());
-         $this->validate($request,[
-            'reply'=>'required|max:255',
-            'user_id'=>'required|integer',
-            'comment_id'=>'required|integer',
-            
-
-        ]);
-        Reply::create([
-           'reply'=>$request->reply,
-           'comment_id'=>$request->comment_id,
-           'user_id'=>$request->user_id,
-        ]);
-        return redirect()->back();
-    }
-
 }

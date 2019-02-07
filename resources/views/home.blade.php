@@ -19,7 +19,7 @@
         </div>
         <div class="card-body">
           <p >{!! substr($post->body,0,200) !!}</p>
-    
+            
           <a class="btn btn-success" href="{{ route('user.readpost',$post->id) }}">ReadMore</i></a>
         </div>
         <div class="card-footer bg-secondary">

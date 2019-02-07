@@ -117,10 +117,21 @@
  $('.ch').click(function(){
    $('.cb').slideToggle(500);
   });
-$('.csb').hide();
+
 $('.csh').click(function(){
    $('.csb').slideToggle(700);
   });
+
+$('.rsh').click(function(){
+   $('.rsb').slideToggle(700);
+  });
+
+$('.createReply').on('click', function(){
+           var comment_id = $(this).data('id');
+           $('#comment_id').val(comment_id);
+            $('#createReplyModel').modal('show');
+            console.log($('#comment_id').val())
+       });
 
 </script>
 

@@ -31,7 +31,7 @@ Route::get('post/{id}/read','HomeController@read')->name('user.readpost');
 Route::get('category/{id}/post','HomeController@category_posts')->name('user.category_posts');
 
 Route::post('comments/{post_id}','CommentController@store')->name('comments.store');
-
+Route::post('comments/{post_id}/reply','ReplyController@store')->name('comments.reply');
 
 
 Route::group(['middleware'=>'admin'],function(){
